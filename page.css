@@ -1,0 +1,18 @@
+/* Font Definitions */
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.heading-font {
+    font-family: 'Fraunces', serif;
+}
+
+/* Card Hover Animations */
+.link-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}

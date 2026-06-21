@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directline Assurance Intranet Hub</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="page.css">
+</head>
+<body class="min-h-screen bg-white">
+    
+    <header class="relative overflow-hidden">
+        <!-- Background Image -->
+        <img class="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" 
+             src="https://images.pexels.com/photos/8297855/pexels-photo-8297855.jpeg?auto=compress&cs=tinysrgb&w=1280" 
+             alt="Spacious modern office environment">
+             
+        <!-- Header Content -->
+        <div class="relative px-6 py-12 md:py-16 text-center bg-yellow-400">
+            <h1 class="heading-font text-black font-bold text-[45px]">DIRECTLINE ASSURANCE COMPANY</h1>
+            <p class="mt-2 text-lg opacity-80 text-[#b4005a] text-[33px]">Your central workspace for tools, links & updates</p>
+            
+            <!-- Live Clock -->
+            <div class="mt-4 inline-flex items-center gap-2 bg-white/10 backdrop-blur rounded-full px-4 py-2">
+                <i data-lucide="clock" style="width:16px;height:16px;"></i>
+                <span id="live-clock" class="text-sm font-medium text-gray-800"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 grid lg:grid-cols-3 gap-8">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-2 space-y-8">
+            
+            <!-- Quick Access Section -->
+            <section>
+                <h2 class="heading-font mb-4 text-[#b4005a] font-bold text-2xl">Quick Access</h2>
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <a href="#" class="link-card rounded-xl p-5 flex flex-col items-center gap-2 text-center bg-slate-800 text-slate-50">
+                        <i data-lucide="users" style="width:28px;height:28px"></i>
+                        <span class="font-medium text-base">HR Portal</span>
+                    </a>
+                    <a href="#" class="link-card rounded-xl p-5 flex flex-col items-center gap-2 text-center bg-slate-800 text-slate-50">
+                        <i data-lucide="wallet" style="width:28px;height:28px"></i>
+                        <span class="font-medium text-base">Finance</span>
+                    </a>
+                    <a href="#" class="link-card rounded-xl p-5 flex flex-col items-center gap-2 text-center bg-slate-800 text-slate-50">
+                        <i data-lucide="monitor" style="width:28px;height:28px"></i>
+                        <span class="font-medium text-base">IT Support</span>
+                    </a>
+                    <a href="#" class="link-card rounded-xl p-5 flex flex-col items-center gap-2 text-center bg-slate-800 text-slate-50">
+                        <i data-lucide="folder-kanban" style="width:28px;height:28px"></i>
+                        <span class="font-medium text-base">Projects</span>
+                    </a>
+                    <a href="#" class="link-card rounded-xl p-5 flex flex-col items-center gap-2 text-center bg-slate-800 text-slate-50">
+                        <i data-lucide="calendar" style="width:28px;height:28px"></i>
+                        <span class="font-medium text-base">Calendar</span>
+                    </a>
+                    <a href="#" class="link-card rounded-xl p-5 flex flex-col items-center gap-2 text-center bg-slate-800 text-slate-50">
+                        <i data-lucide="file-text" style="width:28px;height:28px"></i>
+                        <span class="font-medium text-base">Documents</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Quick Tools Section -->
+            <section>
+                <!-- Changed color from invisible #f1f5f9 to visible slate-400 to match design -->
+                <h2 class="heading-font mb-4 text-slate-400 font-semibold text-2xl">Quick Tools</h2>
+                <div class="rounded-xl p-5 bg-slate-800">
+                    <label class="font-medium block mb-2 text-slate-200 text-base" for="notepad">Scratch Pad</label>
+                    <textarea id="notepad" class="w-full h-28 p-3 rounded-lg border border-gray-200 resize-none focus:outline-none focus:ring-2 focus:ring-blue-300 text-sm bg-white" placeholder="Jot something down..."></textarea>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Column: Announcements -->
+        <aside>
+            <!-- Changed color from invisible #f1f5f9 to visible slate-400 to match design -->
+            <h2 class="heading-font mb-4 text-slate-400 font-semibold text-2xl">Announcements</h2>
+            <div class="space-y-4">
+                
+                <div class="rounded-xl p-4 border-l-4 border-amber-400 bg-black">
+                    <p class="font-semibold text-amber-400 text-base">Office Closed Friday</p>
+                    <p class="text-sm mt-1 opacity-70 text-amber-400 text-base">The office will be closed on 20th June for a public holiday.</p>
+                </div>
+                
+                <div class="rounded-xl p-4 border-l-4 border-emerald-400 bg-slate-50">
+                    <p class="font-semibold text-[#b4005a] text-base">New HR Policy</p>
+                    <p class="text-sm mt-1 opacity-70 text-[#b4005a] text-base">Updated leave policy is now live on the HR portal.</p>
+                </div>
+                
+                <!-- Updated border color from blue-400 to cyan-400 to match the teal hue in the design -->
+                <div class="rounded-xl p-4 border-l-4 border-cyan-400 bg-gray-600">
+                    <p class="font-semibold text-amber-400 text-base">Q2 Town Hall</p>
+                    <p class="text-sm mt-1 opacity-70 text-amber-400 text-base">Join us next Wednesday at 2 PM for the quarterly update.</p>
+                </div>
+
+            </div>
+        </aside>
+    </main>
+
+    <!-- Custom JavaScript -->
+    <script src="page.js"></script>
+</body>
+</html>
